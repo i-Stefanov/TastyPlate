@@ -1,1 +1,37 @@
-<p>header works!</p>
+<header>
+  <div class="container">
+    <div class="logo-container">
+      <a routerLink="/home"
+        ><p>
+          Tasty <br />
+          Plate
+        </p></a
+      >
+    </div>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <span class="border-right"></span>
+        <ng-container *ngIf="!isLogged">
+          <!-- Not logged in -->
+          <li><a routerLink="/login">Login</a></li>
+          <span class="border-right"></span>
+          <li><a routerLink="/register">Register</a></li>
+          <span class="border-right"></span>
+        </ng-container>
+        <!-- Logged in users -->
+        <ng-container *ngIf="isLogged">
+          <li><a routerLink="/meal-plan">Meal Plan</a></li>
+          <span class="border-right"></span>
+          <li><a routerLink="/recipes">Recipes</a></li>
+          <span class="border-right"></span>
+          <li><a routerLink="/shopping-list">Shopping List</a></li>
+          <span class="border-right"></span>
+          <li><a routerLink="/profile">Profile</a></li>
+          <span class="border-right"></span>
+          <li><a routerLink="/logout">Logout</a></li>
+        </ng-container>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,51 @@
+.container {
+  height: 83vh;
+  align-items: center;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 0.3em;
+  background-color: rgb(236, 204, 104, 0.2);
+  box-shadow: 16px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
+}
+.input-group input {
+  background-color: rgb(236, 204, 104, 0.2);
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0.1em;
+  padding: 0.3em;
+  caret-color: rgba(75, 206, 75);
+  caret: ;
+}
+.input-group input:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-size: 0.8em;
+  color: rgb(255, 255, 255);
+  font-family: "Ubuntu";
+  letter-spacing: 1px;
+  font-weight: 100;
+}
