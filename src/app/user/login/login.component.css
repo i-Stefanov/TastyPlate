@@ -1,10 +1,10 @@
 .container {
   height: 83vh;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .form-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-grow: 1;
@@ -13,10 +13,32 @@
 .form-container form {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 1em 2em;
+  align-items: center;
   border-radius: 0.3em;
-  background-color: rgb(236, 204, 104, 0.2);
+  background-color: rgb(236, 204, 104, 0.3);
   box-shadow: 16px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form h2 {
+  color: white;
+  font-family: "Ubuntu";
+  margin-bottom: 1em;
+}
+.form-container form p {
+  color: rgb(255, 255, 255);
+  font-family: "Ubuntu";
+  margin-top: 1em;
+  font-size: 0.8em;
+}
+
+.form-container form p a {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+.form-container form p a:hover {
+  color: rgb(123, 237, 159);
 }
 
 .input-group {
@@ -28,24 +50,44 @@
 .input-group label {
   justify-content: flex-start;
   margin-bottom: 0.5em;
+  font-family: "Ubuntu";
+
+  color: rgb(255, 255, 255, 0.7);
 }
 .input-group input {
-  background-color: rgb(236, 204, 104, 0.2);
+  background-color: rgb(236, 204, 104, 0.4);
   border: none;
   border-bottom: 1px solid white;
   border-radius: 0.1em;
   padding: 0.3em;
-  caret-color: rgba(75, 206, 75);
-  caret: ;
+  caret-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 .input-group input:focus {
   outline: none;
 }
+/* .input-group input {
+  background-color: transparent;
+} */
 
 ::placeholder {
   font-size: 0.8em;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255, 0.7);
   font-family: "Ubuntu";
   letter-spacing: 1px;
   font-weight: 100;
+}
+
+.form-container button {
+  background-color: rgb(236, 204, 104, 0.3);
+  padding: 0.5em 1.5em;
+  margin-top: 1em;
+  border: none;
+  font-family: "Ubuntu";
+  border-radius: 0.3em;
+  transition: all ease 0.3s;
+}
+
+.form-container button:hover {
+  background-color: rgb(236, 204, 104, 0.9);
 }

@@ -3,16 +3,11 @@
     <form class="login-form" action="/submit-login" method="post">
       <h2>Login</h2>
       <div class="input-group">
-        <label for="username">Username</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="Username"
-        />
+        <!-- <label for="username">Username</label> -->
+        <input type="text" id="email" name="email" placeholder="Email" />
       </div>
       <div class="input-group">
-        <label for="password">Password</label>
+        <!-- <label for="password">Password</label> -->
         <input
           type="password"
           id="password"
@@ -21,6 +16,7 @@
         />
       </div>
       <button type="submit">Login</button>
+      <p>Don't have an account? Register <a routerLink="/register">here</a></p>
     </form>
   </div>
 </div>
